@@ -28,4 +28,5 @@ apply_external_patches $1 hardware/nvidia/platform/t19x/galen/kernel-dts
 
 if [[ $JETPACK_VERSION =~ 5.* ]]; then
     cp $DEVDIR/d4xx.c $DEVDIR/sources_$JETPACK_VERSION/kernel/nvidia/drivers/media/i2c/
+    cp $DEVDIR/tegra194-camera-d4xx.dtsi $DEVDIR/sources_$JETPACK_VERSION/hardware/nvidia/platform/t19x/galen/kernel-dts/common/
 fi
